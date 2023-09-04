@@ -1,0 +1,231 @@
+---
+title: "CSC 220: Day 4 (Week 2)"
+author: "Avinh Huynh"
+date: "2023-08-30"
+categories: [CSC220]
+---
+
+# Chapter 2: Intro to Java 2
+
+## Protection Levels
+
+``` java
+package one;
+
+public class A {
+
+  int a;
+  public int b;
+  private int c;
+  static public int d;
+  static private in e;
+  
+  public void f1()  {}
+  private void f2()  {}
+  void f3() {}
+  static public f4() {}
+  void f5() {
+  
+    // Q1: List all methods and data that can be accessed
+    // Everything
+  
+  }
+  static void f6() {
+  
+    // Q2: List all fields and data that can be accessed
+    // Everything with static
+  
+  }
+}
+```
+
+``` java
+package one;
+
+Class B {
+
+  void g() {
+    A objA = new A();
+    
+    // Q3: List all fields and data that can be accessed
+    // Everything with the default modifier or public
+    // Everything without private
+  }
+
+}
+```
+
+``` java
+Package two;
+Import one;
+
+Class C {
+
+  void h() {
+  
+    // Q4: List all fields and data that can be accessed
+    // Everything with public only
+    
+  }
+
+}
+```
+
+### Protection level Table
+
+| Col1      | Same Class   | Same Package | Inherited         | Different Package |
+|-----------|--------------|--------------|-------------------|-------------------|
+| Public    | 🟩           | 🟩           | 🟩                | 🟩                |
+| Protected | 🟩           | 🟩           | 🟩                | 🟥                |
+| Default   | 🟩           | 🟩           | 🟥                | 🟥                |
+| Private   | 🟩           | 🟥           | 🟥                | 🟥                |
+| Package   | Same Package | Same Package | Different Package | Different Package |
+
+## Generic Data Types
+
+-   Use a single capital letter
+
+-   Placeholder instead of an actual class type
+
+``` java
+public class MyClass <T>
+public class MyClass <T, Q>
+```
+
+### Generic Data Types Example
+
+``` java
+OrderedPairIntro to Generic Data Types: simple example
+// define generic type T
+// within the class, can use T as fields,
+// parameters, local vars and return type
+
+public class OrderedPair <T>
+{
+  
+  private T first, second; // fields
+  
+  public OrderedPair () {} // end default constructor
+  
+  public void setPair (T firstItem, T secondItem) {
+    first = firstItem;
+    second = secondItem;
+  } // end setPair
+  
+  public void changeOrder () {
+    T temp = first;
+    first = second;
+    second = temp;
+  } // end changeOrder
+  
+  public String toString () {
+    return "(" + first + ", " + second + ")";
+  } // end toString
+} // end OrderedPair
+```
+
+### Instantiating Generic Types
+
+``` java
+OrderedPair <String> fruit = new OrderedPair <String>
+
+Name twee = new Name("Avinh", "Huynh");
+Name twaa = new Name("Laeli", "Gordon");
+OrderedPair <Name> switchNames = new OrderedPair <Name>
+
+OrderedPair <int> myObj = new OrderedPair <int> // DOESNT WORK. NO PRIMITIVES
+OrderedPair <Integer> myObj = new OrderedPair <Integer> // User wrappers
+```
+
+## Composition and Inheritance
+
+-   Composition: Has A instantiated
+
+-   Inheritance: Is A
+
+### Composition Example
+
+``` Java
+public class Student {
+
+  private Name name;
+  
+  public Student() {
+    name = new Name();
+  }
+
+}
+```
+
+-   Student composes Name inside of it
+
+### Inheritance
+
+First a general class (base class / super class / parent class) is defined. Then, a derived class (subclass / child class) can:
+
+-   Add methods and data fields
+
+-   Revise methods and rewrite them
+
+Advantages:
+
+-   Saves work
+
+-   Common properties are only defined once
+
+Notes:
+
+-   Final classes can't be parents (String, Integer)
+
+### Inheritance Diagram
+
+![](inheritanceDiagram.png)
+
+-   A CollegeStudent is always a Student, but not always the other way around
+
+-   A UndergradStudent is always a CollegeStudent and always a Student, but not the other way around
+
+-   A SchoolStudent and CollegeStudent are siblings, but they are not related
+
+### Inheritance Diagram
+
+![](inheritanceExample.png)
+
+-   A CollegeStudent contains the Student object
+
+### Inheritance in Code Example
+
+``` Java
+public class CollegeStudent extends Student {
+
+  // add fields
+  private int year;
+  private String degree;
+  
+  public CollegeStudent () {
+  
+    super(); // calls the Student constructor
+    year = 0;
+    degree = "";
+  
+  }
+  
+  public String toString() {
+  
+    return super.ToString() + ", " + degree + ", " + year;
+  
+  }
+}
+```
+
+-   super has to be the first function in the constructor
+
+-   can not use Student()
+
+-   this() is the constructor for the child class
+
+### Inheritance: access control example
+
+![](inheritanceAndCompositionAccessControl.png)
+
+-   Visual shows how protection works for subclasses
