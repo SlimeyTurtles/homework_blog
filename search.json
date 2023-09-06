@@ -35,18 +35,18 @@
     "text": "Composition: Has A instantiated\nInheritance: Is A\n\n\n\npublic class Student {\n\n  private Name name;\n  \n  public Student() {\n    name = new Name();\n  }\n\n}\n\nStudent composes Name inside of it\n\n\n\n\nFirst a general class (base class / super class / parent class) is defined. Then, a derived class (subclass / child class) can:\n\nAdd methods and data fields\nRevise methods and rewrite them\n\nAdvantages:\n\nSaves work\nCommon properties are only defined once\n\nNotes:\n\nFinal classes can’t be parents (String, Integer)\n\n\n\n\n\n\nA CollegeStudent is always a Student, but not always the other way around\nA UndergradStudent is always a CollegeStudent and always a Student, but not the other way around\nA SchoolStudent and CollegeStudent are siblings, but they are not related\n\n\n\n\n\n\nA CollegeStudent contains the Student object\n\n\n\n\npublic class CollegeStudent extends Student {\n\n  // add fields\n  private int year;\n  private String degree;\n  \n  public CollegeStudent () {\n  \n    super(); // calls the Student constructor\n    year = 0;\n    degree = \"\";\n  \n  }\n  \n  public String toString() {\n  \n    return super.ToString() + \", \" + degree + \", \" + year;\n  \n  }\n}\n\nsuper has to be the first function in the constructor\ncan not use Student()\nthis() is the constructor for the child class\n\n\n\n\n\n\nVisual shows how protection works for subclasses"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "homework_blog",
-    "section": "",
-    "text": "ENG 104: Day 4 (Week 2)\n\n\n\n\n\n\n\nENG104\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Pre-reading worksheet\n\n\n\n\n\n\n\nENG104\n\n\nHW\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 220: Day 4 (Week 2)\n\n\n\n\n\n\n\nCSC220\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Day 3 (Week 2)\n\n\n\n\n\n\n\nENG104\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 230: Day 2 (Week 2)\n\n\n\n\n\n\n\nCSC230\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 220: Day 3 (Week 2)\n\n\n\n\n\n\n\nCSC220\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Day 2 (Week 1)\n\n\n\n\n\n\n\nENG 104\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 220: Day 2 (Week 1)\n\n\n\n\n\n\n\nCSC220\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Day 1 (Week 1)\n\n\n\n\n\n\n\nCSC230\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 22, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 230: Day 1 (Week 1)\n\n\n\n\n\n\n\nCSC230\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "homework_blog",
+    "section": "",
+    "text": "ENG 104: Day 5 (Week 3)\n\n\n\n\n\n\n\nENG104\n\n\nWeek3\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Day 4 (Week 2)\n\n\n\n\n\n\n\nENG104\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Pre-reading worksheet\n\n\n\n\n\n\n\nENG104\n\n\nHW\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 220: Day 4 (Week 2)\n\n\n\n\n\n\n\nCSC220\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Day 3 (Week 2)\n\n\n\n\n\n\n\nENG104\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 230: Day 2 (Week 2)\n\n\n\n\n\n\n\nCSC230\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 220: Day 3 (Week 2)\n\n\n\n\n\n\n\nCSC220\n\n\nWeek2\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Day 2 (Week 1)\n\n\n\n\n\n\n\nENG 104\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 220: Day 2 (Week 1)\n\n\n\n\n\n\n\nCSC220\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nENG 104: Day 1 (Week 1)\n\n\n\n\n\n\n\nCSC230\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 22, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\n  \n\n\n\n\nCSC 230: Day 1 (Week 1)\n\n\n\n\n\n\n\nCSC230\n\n\nWeek1\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nAvinh Huynh\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/23-8-29-ENG104/index.html",
