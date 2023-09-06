@@ -1,0 +1,6 @@
+---
+title: "ENG 104: Day 2 (Week 1)"
+author: "Avinh Huynh"
+date: "2023-08-24"
+categories: [ENG 104, Week1]
+---

@@ -1,0 +1,31 @@
+{
+    "id": "2B90EE58",
+    "path": "//wsl.localhost/Ubuntu/home/avinh/projects/homework_blog/posts/23-9-5-ENG104/index.qmd",
+    "project_path": "posts/23-9-5-ENG104/index.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1693959888941.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "61,0",
+        "scrollLine": "0",
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "6042:1929.3333740234375"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1693965649,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1693965649494,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,6 +1,0 @@
----
-title: "CSC 230: Day 2"
-author: "Avinh Huynh"
-date: "2023-08-28"
-categories: [CSC230]
----

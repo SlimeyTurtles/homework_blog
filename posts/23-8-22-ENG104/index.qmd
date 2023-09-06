@@ -1,0 +1,8 @@
+---
+title: "ENG 104: Day 1 (Week 1)"
+author: "Avinh Huynh"
+date: "2023-08-22"
+categories: [CSC230, Week1]
+---
+
+Syllabus probably

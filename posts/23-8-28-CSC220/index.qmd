@@ -1,0 +1,6 @@
+---
+title: "CSC 220: Day 3 (Week 2)"
+author: "Avinh Huynh"
+date: "2023-08-28"
+categories: [CSC220, Week2]
+---
