@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Avinh Huynh">
-<meta name="dcterms.date" content="2023-09-11">
+<meta name="dcterms.date" content="2023-09-12">
 
-<title>Avinh’s Homework Blog - CSC 230: Day 3 (Week 4)</title>
+<title>Avinh’s Homework Blog - ENG 104: Day 7 (Week 5)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,10 +111,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">CSC 230: Day 3 (Week 4)</h1>
+      <h1 class="title">ENG 104: Day 7 (Week 5)</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">CSC230</div>
-                <div class="quarto-category">Week4</div>
+                <div class="quarto-category">ENG 104</div>
+                <div class="quarto-category">Week 5</div>
               </div>
                   </div>
   </div>
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 11, 2023</p>
+        <p class="date">September 12, 2023</p>
       </div>
     </div>
     
@@ -150,274 +150,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-<table class="table">
-<colgroup>
-<col style="width: 17%">
-<col style="width: 82%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Not ¬</td>
-<td>The opposite truth value (¬P, if P is true, then ¬P is false)</td>
-</tr>
-<tr class="even">
-<td>Conjuntion ∧</td>
-<td>P ∧ Q, only if P is true <strong>and</strong> Q is true, then P ∧Q is true</td>
-</tr>
-<tr class="odd">
-<td>Disjunction ∨</td>
-<td>P ∨ Q, if P is true <strong>or</strong> Q is true, then P ∨ Q is true</td>
-</tr>
-<tr class="even">
-<td>Conditional ⟶</td>
-<td>P ⟶ Q, <strong>infers</strong> that if P is true, then Q should be true (more on this later)</td>
-</tr>
-<tr class="odd">
-<td>Biconditional ⟷</td>
-<td>P ⟷&nbsp;Q, P is true <strong>if and only if</strong> (iff) Q is true, and vice versa</td>
-</tr>
-<tr class="even">
-<td>Exclusive or ⨁</td>
-<td>P ⨁ Q is only true if only one of P or Q is true, and false otherwise</td>
-</tr>
-</tbody>
-</table>
-<p>Exclusive or ⨁ truth table</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>P</th>
-<th>Q</th>
-<th>P ⨁ Q</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>T</td>
-<td>F</td>
-</tr>
-<tr class="even">
-<td>T</td>
-<td>F</td>
-<td>T</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>T</td>
-<td>T</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>F</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="conditional" class="level3">
-<h3 class="anchored" data-anchor-id="conditional">Conditional</h3>
 <ul>
-<li><p>P ⟶ Q: if P, then Q</p></li>
-<li><p>P is the hypothesis and Q is the conclusion</p></li>
-<li><p>P ⟶ Q is false when P is true and Q is false</p></li>
+<li>loss of people who passed</li>
+<li>missing visiting people</li>
+<li>lethargy</li>
+<li>wait gain</li>
+<li>loneliness</li>
 </ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>P</th>
-<th>Q</th>
-<th>P <strong>⟶</strong> Q</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>T</td>
-<td>T</td>
-</tr>
-<tr class="even">
-<td>T</td>
-<td>F</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>T</td>
-<td>T</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>T</td>
-</tr>
-</tbody>
-</table>
-<p>If <u>I am elected</u> (proposition), then I will <u>lower taxes</u> (conclusion)</p>
-<p>The conclusion can be true when the proposition is false (taxes can be lowered without me being elected)</p>
-</section>
-<section id="biconditional" class="level3">
-<h3 class="anchored" data-anchor-id="biconditional">Biconditional</h3>
-<ul>
-<li><p>P ⟷ Q: Combines propositions that have the same truth value</p></li>
-<li><p>P iff Q: P is only true when Q is true and vice versa. Otherwise, it is false</p></li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>P</th>
-<th>Q</th>
-<th>P ⟷ Q</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>T</td>
-<td>T</td>
-</tr>
-<tr class="even">
-<td>T</td>
-<td>F</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>T</td>
-<td>F</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>T</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="converse-contrapositive-and-inverse" class="level3">
-<h3 class="anchored" data-anchor-id="converse-contrapositive-and-inverse">Converse, Contrapositive, and Inverse</h3>
-<p>P ⟶ Q : If it is raining, then the home team will win</p>
-<p>Converse (Q ⟶ P): If the home team wins, then it will rain</p>
-<p>Contrapositive (¬Q ⟶ ¬P): If the home team does not win, then it will not rain</p>
-<p>Inverse (¬P ⟶ ¬Q): If it does not rain, then the home team will not win</p>
-<p>Note: P ⟶ Q and Contrapositive are logically equivalent</p>
-</section>
-<section id="compound-propositions" class="level3">
-<h3 class="anchored" data-anchor-id="compound-propositions">Compound Propositions</h3>
-<p>(P ∨ ¬Q) ⟶ (P ∧ Q)</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>P</th>
-<th>Q</th>
-<th>¬Q</th>
-<th>(P ∨ ¬Q)</th>
-<th>(P ∧ Q)</th>
-<th>(P ∨ ¬Q) ⟶ (P ∧ Q)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>T</td>
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>T</td>
-</tr>
-<tr class="even">
-<td>T</td>
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>F</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>T</td>
-<td>F</td>
-<td>F</td>
-<td>F</td>
-<td>T</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>F</td>
-<td>F</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="precedence-of-logical-operators" class="level3">
-<h3 class="anchored" data-anchor-id="precedence-of-logical-operators">Precedence of Logical Operators</h3>
-<ol type="1">
-<li>¬</li>
-<li>∧</li>
-<li>∨</li>
-<li>⟶</li>
-<li>⟷</li>
-</ol>
-</section>
-<section id="propositional-equivalence" class="level3">
-<h3 class="anchored" data-anchor-id="propositional-equivalence">1.3 Propositional Equivalence</h3>
-<ul>
-<li><p>Idea: Replace one statement with another of the same truth value</p></li>
-<li><p>Tautology: A <strong>Compound Proposition</strong> (CP) that is <strong>always true</strong> no matter what the truth values of the propositional variables that occur in it are</p></li>
-<li><p>Contradiction: A CP that is <strong>always false</strong></p></li>
-<li><p>Contingency: A CP that is <strong>neither a Tautology or Contradiction</strong></p></li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>P</th>
-<th>¬P</th>
-<th>P ∨ ¬P</th>
-<th>P ∧ ¬P</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>F</td>
-<td>T</td>
-<td>F</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>F</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p>P ∨ ¬P: Tautology</p></li>
-<li><p>P ∧ ¬P: Contradiction</p></li>
-</ul>
-</section>
-<section id="logically-equivalent" class="level3">
-<h3 class="anchored" data-anchor-id="logically-equivalent">Logically Equivalent</h3>
-</section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">≡</h3>
-</section>
-<section id="activity" class="level3">
-<h3 class="anchored" data-anchor-id="activity">Activity</h3>
+<p>Avinh Huynh Atlas Velazquez Abigail Ruano Julianne Hernando Wilmer Leon</p>
+<p>Group 4 - Sadness</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
